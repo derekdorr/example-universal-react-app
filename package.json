@@ -1,0 +1,35 @@
+
+{
+  "name": "example-universal-react-app",
+  "version": "1.0.0",
+  "description": "An example, barebones universal react application",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src --out-dir lib/",
+    "build-client": "webpack --mode production --colors --config webpack.config.js",
+    "start-dev": "npm run build-client && babel-node src/index.js",
+    "start": "npm run build && node lib/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-styled-components": "^1.10.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "hapi": "^17.8.1",
+    "inert": "^5.1.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.3"
+  }
+}
