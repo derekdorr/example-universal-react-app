@@ -14,12 +14,14 @@
                         "last 2 ChromeAndroid versions",
                         "last 2 Safari versions"
                     ]
-                }
+                },
+                "useBuiltIns": "usage"
             }
         ],
         "@babel/react"
     ],
     "plugins": [
-        "styled-components"
+        "styled-components",
+        "@babel/transform-runtime"
     ]
 }
