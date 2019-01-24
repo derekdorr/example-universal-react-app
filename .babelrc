@@ -1,0 +1,27 @@
+
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "targets": {
+                    "browsers": [
+                        "ie >= 10",
+                        "iOS >= 9",
+                        "last 2 Chrome versions",
+                        "last 2 Firefox versions",
+                        "last 2 Edge versions",
+                        "last 2 ChromeAndroid versions",
+                        "last 2 Safari versions"
+                    ]
+                },
+                "useBuiltIns": "usage"
+            }
+        ],
+        "@babel/react"
+    ],
+    "plugins": [
+        "styled-components",
+        "@babel/transform-runtime"
+    ]
+}
